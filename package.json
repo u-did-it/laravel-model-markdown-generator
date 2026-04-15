@@ -1,8 +1,20 @@
 {
+  "publisher": "TuringComplete",
   "name": "laravel-model-markdown-generator",
+  "icon": "images/icon.png",
   "displayName": "Laravel Model Markdown Generator",
   "description": "Generate Markdown documentation for Laravel table structure and Eloquent relationships by scanning models and migrations.",
-  "version": "0.0.1",
+  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/u-did-it/laravel-model-markdown-generator.git"
+  },
+  "homepage": "https://github.com/u-did-it/laravel-model-markdown-generator",
+  "bugs": {
+    "url": "https://github.com/u-did-it/laravel-model-markdown-generator/issues"
+  },
+  
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.109.0"
   },

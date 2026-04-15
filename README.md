@@ -1,40 +1,78 @@
-# Laravel Model Markdown Generator
+<p align="center">
+  <img src="images/icon.png" width="120" alt="Laravel Model Markdown Generator Logo" />
+</p>
 
-Laravel Model Markdown Generator helps you document older Laravel projects by scanning models and migrations and turning them into readable Markdown. The generated documentation makes it easier for developers, AI agents, and code assistants to understand table structure, foreign keys, and model relationships without manually tracing the entire codebase.
+<h1 align="center">Laravel Model Markdown Generator</h1>
 
-## What It Does
+<p align="center">
+  <a href="https://turingcomplete.in">Website</a> •
+  <a href="https://marketplace.visualstudio.com/items?itemName=TuringComplete.laravel-model-markdown-generator">Marketplace</a>
+</p>
 
-- Scans `app/Models` recursively for Laravel model classes.
-- Scans `database/migrations` recursively for table definitions.
-- Extracts table columns from `Schema::create(...)` migrations.
-- Extracts foreign keys defined with the standard Laravel `foreign(...)->references(...)->on(...)` syntax.
-- Detects common Eloquent relationships such as `hasOne`, `hasMany`, `belongsTo`, `belongsToMany`, `morphTo`, `morphOne`, and `morphMany`.
-- Opens a generated Markdown document directly in VS Code.
+---
 
-## Command
+## 🚀 Overview
+
+Laravel Model Markdown Generator automatically documents your Laravel database structure by scanning models and migrations and converting them into clean, readable Markdown.
+
+Perfect for onboarding, debugging, and helping AI/code assistants understand your schema instantly.
+
+---
+
+## 🧠 Why This Exists
+
+Understanding relationships in legacy Laravel projects is painful.
+This extension removes the guesswork by generating a clear, structured overview of your database.
+
+---
+
+## ✨ What It Does
+
+* Scans `app/Models` recursively for Laravel model classes
+* Scans `database/migrations` recursively for table definitions
+* Extracts table columns from `Schema::create(...)` migrations
+* Extracts foreign keys using Laravel’s standard syntax
+* Detects Eloquent relationships:
+
+  * `hasOne`
+  * `hasMany`
+  * `belongsTo`
+  * `belongsToMany`
+  * `morphTo`
+  * `morphOne`
+  * `morphMany`
+* Opens generated Markdown directly in VS Code
+
+---
+
+## ⚡ Command
 
 Open the Command Palette and run:
 
 `Laravel: Generate Model Relationships Markdown`
 
-The extension analyzes the currently opened Laravel workspace and opens a Markdown document containing:
+The extension will analyze your current Laravel workspace and generate a Markdown document containing:
 
-- tables
-- columns
-- foreign keys
-- detected Eloquent relationships
+* Tables
+* Columns
+* Foreign Keys
+* Eloquent Relationships
 
-## Expected Laravel Structure
+---
 
-The current version expects a conventional Laravel project layout:
+## 📂 Expected Laravel Structure
 
-- `artisan` at the workspace root
-- models inside `app/Models`
-- migrations inside `database/migrations`
+The extension expects a standard Laravel project layout:
 
-If the workspace is not recognized as a Laravel project, the command stops and shows an error.
+* `artisan` at the workspace root
+* Models inside `app/Models`
+* Migrations inside `database/migrations`
 
-## Example Output
+If the workspace is not recognized as a Laravel project, the command will stop and show an error.
+
+---
+
+## 🧾 Example Output
 
 ```md
 # Database Documentation
@@ -56,27 +94,47 @@ If the workspace is not recognized as a Laravel project, the command stops and s
 - belongsTo -> User
 ```
 
-## Current Limitations
+---
 
-This extension is intentionally lightweight. At the moment it:
+## ⚠️ Current Limitations
 
-- assumes model table names using a simple pluralization strategy like `Post -> posts`
-- does not evaluate custom `$table`, guarded models, or advanced pluralization rules
-- reads migrations based on `Schema::create(...)` and standard foreign key syntax only
-- opens the generated Markdown in an editor instead of automatically saving a physical `.md` file
+This extension is intentionally lightweight. Currently it:
 
-## Why Use It
+* Assumes model table names using simple pluralization (`Post -> posts`)
+* Does not evaluate custom `$table` properties or advanced pluralization rules
+* Parses migrations based only on `Schema::create(...)`
+* Supports standard Laravel foreign key syntax only
+* Opens Markdown in editor instead of saving a `.md` file automatically
 
-- useful for onboarding into an existing Laravel codebase
-- helps visualize how tables connect without opening every model and migration
-- provides a lightweight documentation starting point you can copy into project docs
+---
 
-## Release Notes
+## 🎯 Why Use It
+
+* Quickly understand unfamiliar Laravel codebases
+* Visualize database relationships without digging through files
+* Generate documentation for teams or personal reference
+* Improve context for AI tools and code assistants
+
+---
+
+## 📦 Release Notes
 
 ### 0.0.1
 
 Initial public release.
 
-## Contributing
+---
 
-Issues and improvements are welcome. If you find a relationship pattern or migration syntax that is not detected yet, open an issue with a minimal Laravel example so support can be added safely.
+## 🤝 Contributing
+
+Contributions, issues, and suggestions are welcome.
+
+If you encounter a migration or relationship pattern that isn’t detected, open an issue with a minimal Laravel example so support can be added safely.
+
+---
+
+## ⭐ Support
+
+If you find this useful, consider starring the project or sharing it.
+
+---
