@@ -4,7 +4,6 @@
   "icon": "images/icon.png",
   "displayName": "Laravel Model Markdown Generator",
   "description": "Generate Markdown documentation for Laravel table structure and Eloquent relationships by scanning models and migrations.",
-  
   "repository": {
     "type": "git",
     "url": "https://github.com/u-did-it/laravel-model-markdown-generator.git"
@@ -13,8 +12,7 @@
   "bugs": {
     "url": "https://github.com/u-did-it/laravel-model-markdown-generator/issues"
   },
-  
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.109.0"
   },
