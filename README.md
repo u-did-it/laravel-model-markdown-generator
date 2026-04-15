@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/icon.png" width="120" alt="Laravel Model Markdown Generator Logo" />
+  <img src="assets/images/icon.png" width="120" alt="Laravel Model Markdown Generator Logo" />
 </p>
 
 <h1 align="center">Laravel Model Markdown Generator</h1>
@@ -11,7 +11,7 @@
 
 ---
 
-## 🚀 Overview
+## Overview
 
 Laravel Model Markdown Generator automatically documents your Laravel database structure by scanning models and migrations and converting them into clean, readable Markdown.
 
@@ -19,14 +19,20 @@ Perfect for onboarding, debugging, and helping AI/code assistants understand you
 
 ---
 
-## 🧠 Why This Exists
+# My VS Code Extension
+
+![Demo](./assets/gifs/laravel-model-markdown-generator-demo.gif)
+
+---
+
+## Why This Exists
 
 Understanding relationships in legacy Laravel projects is painful.
 This extension removes the guesswork by generating a clear, structured overview of your database.
 
 ---
 
-## ✨ What It Does
+## What It Does
 
 * Scans `app/Models` recursively for Laravel model classes
 * Scans `database/migrations` recursively for table definitions
@@ -45,7 +51,7 @@ This extension removes the guesswork by generating a clear, structured overview 
 
 ---
 
-## ⚡ Command
+## Command
 
 Open the Command Palette and run:
 
@@ -60,7 +66,7 @@ The extension will analyze your current Laravel workspace and generate a Markdow
 
 ---
 
-## 📂 Expected Laravel Structure
+## Expected Laravel Structure
 
 The extension expects a standard Laravel project layout:
 
@@ -72,7 +78,7 @@ If the workspace is not recognized as a Laravel project, the command will stop a
 
 ---
 
-## 🧾 Example Output
+## Example Output
 
 ```md
 # Database Documentation
@@ -96,7 +102,7 @@ If the workspace is not recognized as a Laravel project, the command will stop a
 
 ---
 
-## ⚠️ Current Limitations
+## Current Limitations
 
 This extension is intentionally lightweight. Currently it:
 
@@ -108,24 +114,15 @@ This extension is intentionally lightweight. Currently it:
 
 ---
 
-## 🎯 Why Use It
+## Why Use It
 
 * Quickly understand unfamiliar Laravel codebases
 * Visualize database relationships without digging through files
 * Generate documentation for teams or personal reference
 * Improve context for AI tools and code assistants
 
----
 
-## 📦 Release Notes
-
-### 0.0.1
-
-Initial public release.
-
----
-
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and suggestions are welcome.
 
